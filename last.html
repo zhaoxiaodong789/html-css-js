@@ -1,0 +1,568 @@
+/<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Boy Story</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/certify.css">
+    
+    <script src="js/swiper.min.js"></script>
+    <script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+    <embed src="bgm/BOY STORY - Intro_ BOY STORY.mp3" hidden="true">
+<style>
+html{ cursor:url(mouse/1.cur),auto;}
+body{ background-image:url(img/bgone27.jpg);
+      background-repeat:repeat;
+      cursor:url(mouse/1.cur),auto;}
+a{ cursor:url(mouse/2.cur),auto;}	  
+#container{ width:1200px;
+			margin:0 auto;
+			background-color:black;
+			box-shadow: 0 20px 45px #ddd;}
+#banner{ width:1200px;
+         margin:0 auto; 
+		 height:100px;
+		 background-color:white;
+		 background-image:url(img/bgone29.jpg);
+		 }
+		 
+#searchlink{ width:1200px;
+             height:40px;
+             margin:0 auto;
+			 background-color:black;
+			 }
+#searchlink ul{ width:1200px;
+                list-style:none;
+				margin:0;
+				padding:0;}
+#searchlink ul li{ float:left;
+                   width:200px;}
+#searchlink ul li a{ text-align:center;
+                     text-decoration:none;
+					 line-height:33px;
+					 display:block;}
+#searchlink ul li a,#searchlink ul li a:visited{ background-color:black;
+                                                 background-repeat:repeat-x;
+												 color:white;}
+#searchlink ul li a:hover{ background-image:url(img/block5.gif);
+                           background-repeat:repeat-x;
+						   color:white;}	
+
+						   		 
+#one,#two,#three,#four,#five,#six{ width:200px; 
+                                   height:200px;
+								   float:left; 
+								   margin-top:50px; 
+								   vertical-align: middle; 
+								   display: table-cell; 
+								   text-align: center; 
+								   background-color:white;}
+#one a,#two a,#three a,#four a,#five a,#six a{ font-family:"微软雅黑"; 
+                                               font-size:25px; 
+											   font-weight:bold; 
+											   color:black; 
+											   text-decoration:none; 
+											   text-align:center; 
+											   letter-spacing:0.3em;}
+#one a:hover,#two a:hover,#three a:hover,#four a:hover,#five a:hover,#six a:hover{ color:#F30;}
+
+
+#boundary-one{ width:1200px; 
+               height:80px; 
+               float:left; 
+               vertical-align: middle; 
+               display: table-cell; 
+               text-align: center; 
+               background-color:white;
+}
+
+#left{ width:465px; 
+       height:500px; 
+       float:left; 
+       font-family:"微软雅黑"; 
+       font-size:17px; 
+       background-color:white; 
+       list-style-image:url(img/box_B.png); 
+       vertical-align:middle; 
+       display:table-cell; 
+       text-align:center;
+	   background-image:url(img/bgone42.gif);
+	   }
+#left ul li a{ color:white; 
+               text-decoration:none;}
+#left ul li a:hover{ color:red; 
+                     text-decoration:none;}
+#middle{ width:407px; 
+         height:500px; 
+         float:left; 
+         background-color:white;
+		 background-image:url(img/bgone42.gif);
+}
+#right{ width:328px; 
+        height:500px;  
+        float:left; 
+        background-color:white;
+		box-shadow:-8px 0 30px black;
+}
+#inside{ width:300px; 
+         height:180px; 
+		 border:20px gray double; 
+		 background-color:white; 
+		 margin-left:30px; 
+		 font-family:"微软雅黑"; 
+		 font-size:15px; 
+		 line-height:40px;}
+.special{ font-weight:bold;}
+
+
+#boundary-two{ width:1200px;
+               height:60px;
+			    float:left;
+				background-color:white;}
+
+
+#irregular-left{ width:700px;
+                 height:400px;
+				 float:left;
+				 background-color:white;
+				 box-shadow:-8px 0px 20px black;}
+#irregular-right{ width:500px;
+                  height:400px;
+				  float:left; 
+				  background-color:white;
+				  box-shadow:0px 8px 30px black;
+				  background-image:url(img/bgone42.gif)}
+#irregular-right ul li{ list-style-image:url(img/box_B.png);
+                        width:470px;
+						height:30px;}
+#irregular-right ul li a{ font-family:"微软雅黑"; 
+                          font-size:18px; 
+						  color:black;
+		                  text-decoration:none;}
+#irregular-right ul li a:hover{ color:white;
+                                width:450px;
+                                background-image:url(img/bg1.gif);
+								background-color:black;
+								display:block;}
+
+#slide{ width:1200px; 
+        height:300px; 
+		float:left;}
+
+
+#author{ width:400px; 
+         height:450px; 
+		 float:left; 
+		 background-color:black;}
+#mid{ width:400px; 
+      height:450px; 
+	  float:left;  
+	  background-color:white;
+	  background-image:url(img/bgone42.gif);
+	  }
+#mid ul li{ list-style-image:url(img/icon1.gif);
+			border-bottom:2px dashed red;}
+#mid ul li a{ color:black; 
+              display:block; 
+			  text-decoration:none;
+			  font-family:"微软雅黑";
+			  font-size:17px;
+			  font-weight:600;}
+#mid ul li a:hover{ background-color:#777; 
+                    color:white;}
+#right-slide{ width:400px; 
+              height:450px; 
+			  float:left; 
+			  background-color:white;
+			   box-shadow:0px 8px 20px black;}
+
+
+#foot{ width:1200px; 
+       float:left;
+	   height:280px;
+	   margin-top:50px;
+	   background-image:url(img/foot.jpg);
+	   text-align:center;
+	   color:black;}
+#foot ul{ width:600px;
+          height:30px;
+		  padding-left:350px;
+		  line-height:20px;
+		  text-align:center;}
+#foot ul li { display:block;
+              padding:0 20px;
+			  float:left;
+			  text-decoration:none;}
+#foot ul li a{ color:black;
+               text-decoration:none;
+			   text-align:center;
+			   display:block; }
+#foot ul li a:hover{ background-color:#F33;
+                     color:white;}
+
+
+
+    </style>
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="container">
+<div id="banner">
+  <img src="img/title1.gif">
+</div>
+<div id="searchlink">
+     <ul>
+        <li><a href="#">团体介绍</a></li>
+        <li><a href="#">演艺经历</a></li>
+        <li><a href="#">主要作品</a></li>
+        <li><a href="#">社会活动</a></li>
+        <li><a href="#">获奖记录</a></li>
+        <li><a href="#">人物评价</a></li>
+     </ul> 
+     </div>
+
+ 
+
+
+<div id="certify">
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><img src="img/group1after.gif" /></div>
+<div class="swiper-slide"><img src="img/group2.jpg"/></div>
+<div class="swiper-slide"><img src="img/group5.jpg" /></div>
+<div class="swiper-slide"><img src="img/group12aft.jpg" /></div>
+<div class="swiper-slide"><img src="img/group13aft.jpg" /></div>
+<div class="swiper-slide"><img src="img/group14aft.png" /></div>
+<div class="swiper-slide"><img src="img/group15aft.jpg" /></div>
+<div class="swiper-slide"><img src="img/cartoongroup4aft.jpg" /></div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+
+<script>
+certifySwiper = new Swiper('#certify .swiper-container', {
+	watchSlidesProgress: true,
+	slidesPerView: 'auto',
+	centeredSlides: true,
+	loop: true,
+	loopedSlides: 5,
+	autoplay: true,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		//clickable :true,
+	},
+	on: {
+		progress: function(progress) {
+			for (i = 0; i < this.slides.length; i++) {
+				var slide = this.slides.eq(i);
+				var slideProgress = this.slides[i].progress;
+				modify = 1;
+				if (Math.abs(slideProgress) > 1) {
+					modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+				}
+				translate = slideProgress * modify * 260 + 'px';
+				scale = 1 - Math.abs(slideProgress) / 5;
+				zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+				slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+				slide.css('zIndex', zIndex);
+				slide.css('opacity', 1);
+				if (Math.abs(slideProgress) > 3) {
+					slide.css('opacity', 0);
+				}
+			}
+		},
+		setTransition: function(transition) {
+			for (var i = 0; i < this.slides.length; i++) {
+				var slide = this.slides.eq(i)
+				slide.transition(transition);
+			}
+
+		}
+	}
+
+})
+</script>
+
+<div id="one"><img src="img/one2.0.png"><a href="#">贾涵宇</a></div>
+<div id="two"><img src="img/two2.0.png"><a href="#">李梓豪</a></div>
+<div id="three"><img src="img/three2.0.png"><a href="#">贺鑫隆</a></div>
+<div id="four"><img src="img/four 2.0.png"><a href="#">于泽宇</a></div>
+<div id="five"><img src="img/five2.0.png"><a href="#">苟明睿</a></div>
+<div id="six"><img src="img/six2.0.png"><a href="#">任书漾</a></div>
+
+<div id="boundary-one">
+   <img src="img/boundary1.png">
+</div>
+
+<div id="left">
+   <img src="img/title2.png">
+   <ul> 
+    <li style="line-height:40px; background-color:#444"><a href="#">2017年，BOY STORY进行了为期一年的"Real Project"出道预热</a></li>
+    <li style="line-height:40px; background-color:#222"><a href="#">9月1日，推出组合首支单曲《HOW OLD R U》</a></li>
+    <li style="line-height:40px; background-color:#111"><a href="#">2018年9月21日，推出单曲《Enough》，宣布正式出道</a></li>
+    <li style="line-height:40px; background-color:#333"><a href="#">2019年3月，BOY STORY开启"养成系IDOL2.0 Growing Project（成长计划）"</a></li>
+    <li style="line-height:40px; background-color:#666"><a href="#">3月29日，发布单曲《Oh My Gosh》回归</a></li>
+    <li style="line-height:40px; background-color:#777"><a href="#">7月26日，发布单曲《Too Busy》</a></li>
+    <li style="line-height:40px; background-color:#888"><a href="#">2020年1月6日，推出自作曲习作集《I=U=WE:序》</a></li>
+   </ul>
+</div>
+<div id="middle">
+<img src="img/cartoongroup5aft.jpg" style="padding-top:5px">
+<img src="img/title5.png" style="padding-top:5px; padding-left:40px;">
+<div id="inside">
+BOY STORY是北京新声娱乐有限公司于2018年9月21日推出的中国HipHop少年组合，由<span class="special">涵予、梓豪、鑫隆、泽宇、明睿、书漾</span>六位成员组成。
+</div>
+</div>
+<div id="right">
+<SCRIPT type=text/javascript>
+				
+			  imgUrl1="img/one1.jpg";
+			  imgtext1="贾涵宇";
+			  imgLink1=escape("#");
+			  imgUrl2="img/two1.jpg";
+			  imgtext2="李梓豪";
+			  imgLink2=escape("#");
+			  imgUrl3="img/three1.jpg";
+			  imgtext3="贺鑫隆";
+			  imgLink3=escape("#");
+			  imgUrl4="img/four1.jpg";
+			  imgtext4="于泽宇";
+			  imgLink4=escape("#");
+			  imgUrl5="img/five1.jpg";
+			  imgtext5="苟明睿";
+			  imgLink5=escape("#");
+			  imgUrl6="img/six1.jpg";
+			  imgtext6="任书漾";
+			  imgLink6=escape("#");
+			  var focus_width=328		
+			  var focus_height=480		
+			  var text_height=20		
+			  var swf_height = focus_height+text_height
+			  var pics = imgUrl1+"|"+imgUrl2+"|"+imgUrl3+"|"+imgUrl4+"|"+imgUrl5+"|"+imgUrl6
+			  var links = imgLink1+"|"+imgLink2+"|"+imgLink3+"|"+imgLink4+"|"+imgLink5+"|"+imgLink6
+			  var texts = imgtext1+"|"+imgtext2+"|"+imgtext3+"|"+imgtext4+"|"+imgtext5+"|"+imgtext6
+			  document.write('<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  width="'+ focus_width +'" height="'+ swf_height +'">');
+			  document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="playswf.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+			  document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+			  document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+			  document.write('<embed ID="focus_flash" src="playswf.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#C5C5C5" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+		document.write('</object>');
+			
+			</SCRIPT>
+</div>
+
+<div id="boundary-two">
+<img src="img/boundary2.png">
+</div>
+
+<div id="irregular-left">
+  <SCRIPT type=text/javascript>
+	
+			  imgUrl1="img/luyan1.jpg";		
+			  imgtext1="2019沈阳路演";		
+			  imgLink1=escape("#");
+			  imgUrl2="img/luyan2.jpg";
+			  imgtext2="2019天津路演";
+			  imgLink2=escape("#");
+			  imgUrl3="img/luyan3.jpg";
+			  imgtext3="2019成都路演";
+			  imgLink3=escape("#");
+			  imgUrl4="img/luyan4.jpg";
+			  imgtext4="2019成都路演";
+			  imgLink4=escape("#");
+			  imgUrl5="img/luyan5.gif";
+			  imgtext5="2019成都路演";
+			  imgLink5=escape("#");
+			  var focus_width=698	
+			  var focus_height=380		
+			  var text_height=20		
+			  var swf_height = focus_height+text_height
+			  var pics = imgUrl1+"|"+imgUrl2+"|"+imgUrl3+"|"+imgUrl4+"|"+imgUrl5
+			  var links = imgLink1+"|"+imgLink2+"|"+imgLink3+"|"+imgLink4+"|"+imgLink5
+			  var texts = imgtext1+"|"+imgtext2+"|"+imgtext3+"|"+imgtext4+"|"+imgtext5
+			  document.write('<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  width="'+ focus_width +'" height="'+ swf_height +'">');
+			  document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="playswf.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+			  document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+			  document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+			  document.write('<embed ID="focus_flash" src="playswf.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#C5C5C5" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+		document.write('</object>');
+			
+			</SCRIPT>
+
+</div>
+<div id="irregular-right">
+<img src="img/title3.png">
+   <marquee behavior="scroll" direction="up" height="270px" onMouseOver="this.stop()" onMouseOut="this.start()">
+   <ul>
+   <li><a href="#">20180520  首尔弘大路演</a></li>
+   <li><a href="#">20180817  三里屯路演</a></li>
+   <li><a href="#">20181027  AIF亚洲偶像嘉年华舞台</a></li>
+   <li><a href="#">20190115  FEIA盛典舞台</a></li>
+   <li><a href="#">20190406  首尔路演</a></li>
+   <li><a href="#">20190501  昆明路演</a></li>
+   <li><a href="#">20190629  成都路演</a></li>
+   <li><a href="#">20190731  深圳路演</a></li>
+   <li><a href="#">20190823  天津路演</a></li>
+   <li><a href="#">20190825  沈阳路演</a></li>
+   <li><a href="#">20190827  加拿大多伦多舞台</a></li>
+   <li><a href="#">20190915  西安路演</a></li>
+   <li><a href="#">20190921  苏州路演</a></li>
+   <li><a href="#">20190928  泰国KCON舞台</a></li>   
+   <li><a href="#">20190929  泰国路演</a></li>
+   <li><a href="#">20191208  doki人气舞台</a></li>
+   <li><a href="#">20200118  三亚活力春晚舞台</a></li>
+   <li><a href="#">20200516  "花季的告白"云路演</a></li>
+   
+   </ul>
+   </marquee>
+</div>
+
+<div id="slide">
+<div align="center" id="dem1o" style="overflow:hidden;height:300px;width:1200px;">
+    <table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+      <tr>
+      <td align="center" id="demo11">
+        <table border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		  <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片1" src="img/one3.jpg" width="200" border="0" height="300" /></a></td>
+   		  <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片2" src="img/two3.jpg" width="200" border="0" height="300" /></a></td>
+		  <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片3" src="img/three3.jpg" width="200" border="0" height="300" /></a></td>
+     	  <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片4" src="img/four3.jpg" width="200" border="0" height="300" /></a></td>
+		  <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片5" src="img/five3.jpg" width="200" border="0" height="300" /></a></td>
+		  <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片6" src="img/six3.jpg" width="200" border="0" height="300" /></a></td>
+    	  <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片7" src="img/one4.jpg" width="220" border="0" height="300" /></a></td>
+          <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片8" src="img/two4.jpg" width="200" border="0" height="300" /></a></td>
+          <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片9" src="img/three4.jpg" width="200" border="0" height="300" /></a></td>
+          <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片9" src="img/four4.jpg" width="200" border="0" height="300" /></a></td>
+          <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片9" src="img/five4.jpg" width="200" border="0" height="300" /></a></td>
+          <td style="padding-left:5px; padding-top:2px;"><a href="#" target="_blank"><img title="图片9" src="img/six4.jpg" width="180" border="0" height="300" /></a></td>
+		  </tr>
+        </table>
+		</td>
+        <td id="demo12">　</td>
+      </tr>
+    </table>
+    </div>
+	  <script language="javascript" type="text/javascript">
+      <!--
+      var dem1o = document.getElementById("dem1o");
+      var demo11 = document.getElementById("demo11");
+      var demo12 = document.getElementById("demo12");
+      var speed=20;    //数值越大滚动速度越慢
+      demo12.innerHTML = demo11.innerHTML
+      function Marquee(){
+          if(demo12.offsetWidth-dem1o.scrollLeft<=0)
+              dem1o.scrollLeft-=demo11.offsetWidth
+          else{
+              dem1o.scrollLeft++
+          }
+      }
+      var MyMar = setInterval(Marquee,speed);
+      dem1o.onmouseover = function(){clearInterval(MyMar)}
+      dem1o.onmouseout = function(){MyMar = setInterval(Marquee,speed)}
+      -->
+      </script>
+</div>
+
+<div id="author">
+  <div id="TabbedPanels1" class="TabbedPanels">
+    <ul class="TabbedPanelsTabGroup">
+      <li class="TabbedPanelsTab" tabindex="0">个人资料</li>
+      <li class="TabbedPanelsTab" tabindex="0">自我简介</li>
+    </ul>
+    <div class="TabbedPanelsContentGroup">
+      <div class="TabbedPanelsContent">
+      <p>姓名：
+      <br>班别：</p>
+      </div>
+      <div class="TabbedPanelsContent">
+      <marquee behavior="scroll" direction="up"  height="414px">
+        <center>
+        <p>Hello！大家好！</p>
+        <p>BOYSTORY是被朋友安利到的团体
+        <br>觉得他们年纪不大，但对未来却明确的规划，肯努力，能吃苦，有抗住压力坚定脚步追梦的热血和勇气。
+        <br>所以做了BOYSTORY这个主题</p>
+        <p>超出年龄的优秀！期待未来的他们！</p>
+        <p>未来可期！BOYSTORY冲鸭！</p>
+        </center>
+       </marquee>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mid">
+  <img src="img/title4.png">
+    <marquee behavior="scroll" direction="down" height="250px"> 
+    <ul>
+    <li style="line-height:30px; width:340px;"><a href="#">2017-11-29    "亚洲音乐盛典最佳嘻哈新人组合奖</a></li>
+    <li style="line-height:30px; width:340px;"><a href="#">2019-01-15    FEIA颁奖盛典年度最具期待组合奖</a></li>
+    <li style="line-height:30px; width:340px;"><a href="#">2018-01-19    FEIA颁奖盛典年度风尚活力组合奖</a></li>
+    <li style="line-height:30px; width:340px;"><a href="#">2019-12-08    2019TMEA腾讯音乐娱乐盛典   QQ音乐新势力</a></li>
+    </ul>
+    </marquee>
+</div>
+<div id="right-slide">
+<SCRIPT type=text/javascript>
+				
+			  imgUrl1="img/cartoongroup3.jpg";		/*图片路径和图片名称*/
+			  imgtext1="boystory1";		/*广告说明文字*/
+			  imgLink1=escape("#");		/*双引号里的#为文字超链接的路径和文件名*/
+			  imgUrl2="img/group3.jpg";
+			  imgtext2="boystory2";
+			  imgLink2=escape("#");
+			  imgUrl3="img/group6.jpg";
+			  imgtext3="boystory3";
+			  imgLink3=escape("#");
+			  imgUrl4="img/group10.jpg";
+			  imgtext4="boystory4";
+			  imgLink4=escape("#");
+			  imgUrl5="img/cartoongroup1.jpg";
+			  imgtext5="boystory5";
+			  imgLink5=escape("#");
+			  imgUrl6="img/cartoongroup2.jpg";
+			  imgtext6="boystory6";
+			  imgLink6=escape("#");
+			  var focus_width=400		/*幻灯区域宽度*/
+			  var focus_height=430		/*幻灯区域高度*/
+			  var text_height=20		/*文字区域高度*/
+			  var swf_height = focus_height+text_height
+			  var pics = imgUrl1+"|"+imgUrl2+"|"+imgUrl3+"|"+imgUrl4+"|"+imgUrl5+"|"+imgUrl6
+			  var links = imgLink1+"|"+imgLink2+"|"+imgLink3+"|"+imgLink4+"|"+imgLink5+"|"+imgLink6
+			  var texts = imgtext1+"|"+imgtext2+"|"+imgtext3+"|"+imgtext4+"|"+imgtext5+"|"+imgtext6
+			  document.write('<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  width="'+ focus_width +'" height="'+ swf_height +'">');
+			  document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="playswf.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+			  document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+			  document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+			  document.write('<embed ID="focus_flash" src="playswf.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#C5C5C5" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+		document.write('</object>');
+			
+			</SCRIPT>
+
+</div>
+
+<div id="foot">
+<img src="img/foottitle.gif">
+<img src="img/foottitle3.gif">
+本网站版权由作者所有，如有转载，请自行联系作者@20200528
+  <ul>
+     <li><a href="#">关于网站</a></li>
+     <li><a href="#">联系作者</a></li>
+     <li><a href="#">隐私声明</a></li>
+     <li><a href="#">版权声明</a></li>
+     <li><a href="#">敬请期待</a></li>
+  </ul>
+</div>
+
+</div>
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>
